@@ -1,0 +1,21 @@
+{
+  "name": "@rahed/hero-carousel",
+  "version": "1.0.0",
+  "description": "simple carousel for website hero section",
+  "main": "index.js",
+  "scripts": {
+    "test": "start test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MD-Rahed-Mia/HeroCarousel.git"
+  },
+  "keywords": [
+    "git"
+  ],
+  "author": "rahed",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
