@@ -72,7 +72,7 @@ function App() {
 ## License
 
 [MIT]
-- Icon is from react icons and reference screenshot collected from internet.
+- Icon is from react icons and reference screenshot background image collected from internet.
 
 
 ## Authors
