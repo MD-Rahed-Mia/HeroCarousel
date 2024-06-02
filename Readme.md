@@ -1,37 +1,81 @@
-# this is a simple carousel for website hero section.
+
+# Welcome to Hero Carousel. Simply customize your hero carousel.
+
+Small react npm package which help you to build your hero carousel simple easy. Just install and enjoy.
 
 
-<h1>Prop List</h1>
 
 
-//slider
+## Installation
+
+Install hero carousel with npm
+
+```bash
+  npm install @rahed/hero-caro
+```
+    
+## Usage/Examples
+
+```javascript
+//import HeroCarousel from directory
+import HeroCarousel from "@rahed/hero-caro";
+
+
+//slider object
 const slider = [
-  {
-    url: "https://assets-global.website-files.com/62d84e447b4f9e7263d31e94/6399a4d27711a5ad2c9bf5cd_ben-sweet-2LowviVHZ-E-unsplash-1.jpeg",
-    title: "Fashion changing Always",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-    title: "Improve Your Design sense",
-  },
-  {
-    url: "https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium",
-    title: "Explore the earth and moon",
-  },
-];
+    {
+        url: "your image url 1",
+        title: "your title 1"
+    }, 
+    {
+        url: "your image url 2",
+        title: "your title 2"
+    },
+]
 
-const titleButton = {
-  btnColor: "#9f78ff",
-  btnLink: "#",
-};
+function App() {
+    //return HeroCarousel
+  return <HeroCarousel slider={slider} {/* pass other config props */ }/>
+}
+```
 
 
+## Key feature
 
-<HeroSlider
-          slider={slider}
-          height={"60vh"}
-          ButtonDesc={titleButton}
-          Button={true}
-          Indicator={true}
-          IndicatorWidth="50px"
-          />
+- Slider Indicator (you can turn on/off)
+- Title for each slider (you can remove title)
+- Title button [supports Links and Background Color. By default text color is white.] (you can turn on/off)
+- Responsive design.
+- slider next/previous button
+
+## API Reference
+
+#### all api reference
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :---------------------------------------------------------- |
+| `slider`      | `Array of object` | **Required**. add an array of object with key url: "your image url", title: "your cards title" **Note: leave title blank string and ignore title in carousel** |
+| `Button`      | `Boolean` | Hide or Show title button  |
+| `ButtonDesc`      | `Object` | ButtonDesc {btnLink: "accept a link which is trigger title button", btnBackground: "color of background title button", btnTitle: "title button text"}  |
+| `Indicator`      | `Boolean` | Hide or Show Carousel Indicator |
+| `Height`      | `string` | Set height of the carousel |
+| `width`      | `string` | Set width of the carousel |
+
+
+
+
+## Screenshots
+
+![App Screenshot](https://snipboard.io/UVJpqN.jpg)
+
+
+## License
+
+[MIT]
+- Icon is from react icons and reference screenshot collected from internet.
+
+
+## Authors
+
+- [@MD Rahed Mia](https://github.com/MD-Rahed-Mia)
+
